@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
     <meta name="viewport" content="width=device-width,initial-scaled=1.0, minimum-scale=1.0"></meta>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <script type="text/javascript" th:href="@{/webjars/jquery/jquery.min.js}" ></script>
+    <script type="text/javascript" th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" ></script>
     <title>Admin Panel</title>
 </head>
 <body>
-<h1>Welcome, Admin Panel</h1>
+<div class="container-fluid">
+    <div>
+        <nav class="navbar navbar-expand bg-dark navbar-dark">
+            <a class="navbar-brand" th:href="@{/}">
+                <img th:src="@{/images/logo.png}" alt="" width="50vh" height="50vh">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Shipping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Sales Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@{/users}" class="nav-link">Settings</a>
+                    </li>
+                </ul>
+            </div>
 
+        </nav>
+
+    </div>
+    <h1>Welcome, Admin Panel</h1>
+</div>
+
+<div>
+    Unicart -copyright &copy; Unicart.com
+</div>
 </body>
 </html>
