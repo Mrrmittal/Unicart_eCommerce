@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scaled=1.0, minimum-scale=1.0"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
     <script type="text/javascript" th:href="@{/webjars/jquery/jquery.min.js}" ></script>
     <script type="text/javascript" th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" ></script>
@@ -11,11 +11,11 @@
 <body>
 <div class="container-fluid">
     <div>
-        <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <a class="navbar-brand" th:href="@{/}">
                 <img th:src="@{/images/logo.png}" alt="" width="50vh" height="50vh">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="topNavbar">
@@ -60,10 +60,12 @@
 
     </div>
     <h1>Welcome, Admin Panel</h1>
-</div>
 
-<div>
-    Unicart -copyright &copy; Unicart.com
+
+    <div>
+    Unicart Control Panel - copyright &copy; Unicart.com
+    </div>
+
 </div>
 </body>
 </html>
